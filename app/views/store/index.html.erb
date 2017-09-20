@@ -1,0 +1,23 @@
+<% if notice %>
+<p id = "notice"><%= notice %></p>
+<% end %>
+
+<h1>Product Catalog</h1>
+<br/>
+<form action="/">
+   <input type="text" name="searchKey" placeholder="Search"/>
+   <input type="submit" value="search"/>
+</form>
+<br>
+<% @products.each do |product| %>
+   <div class="entry">
+     <%= image_tag(product.image_url) %>
+     <h3><%= product.title %></h3>
+     <p><%= sanitize(product.description) %></p>
+     <div class="price_line">
+       <span class="price"><%= number_to_currency(product.price) %></span>
+       <%= button_to 'ADD TO CART', line_items_path(product_id: product), class: 'add_to_cart', remote:true %>
+     </div>
+    </div>
+<% end %>
+

@@ -1,0 +1,82 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+#banner{
+  background: #9C9;
+  padding: 50px;
+  border-bottom: 2px solid;
+  font: small-caps 60px/60px "Times New Roman", serif;
+  color: #F08080;
+  text-align: center;
+   
+  img {
+     
+     float: left;
+     margin: 10 10 10px 60px;
+  }
+}
+#notice {
+  color: #000 !important;
+  border: 2px solid orange;
+  padding: lem;
+  margin-bottcom: 2em;
+  background-color: #D3D3D3;
+  font: bold smaller sans-serif;
+}
+
+#columns {
+  background: #FA8072;
+
+  #main {
+    margin-left: 31em;
+    padding: 3em;
+    background: white;
+  }
+
+  #side {
+    float: left;
+    padding: 1em 2em;
+    width: 27em;
+    background: #FA8072;
+    
+    
+    form, div {display: inline;}
+    input {font-size: small;}
+    #cart {font-size: small; color: white;
+       table {
+           border-top: 1px dotted #599;
+           border-bottom: 1px dotted #599;
+           margin-bottom: 10px;
+       }
+     }
+    
+    ul {
+       padding: 0;
+       li {
+            list-style: none;
+          a {
+             color: #bfb;
+             font-size: small;
+             }
+           }
+        }
+     }
+ }
+
+    
+
+
+  

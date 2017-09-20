@@ -1,0 +1,12 @@
+<% if notice %> 
+< p id= "notice"><%= notice %></p > 
+<% end %>
+
+<h1>Admin Page Welcome</h1>
+
+It's <%= Time.now %> 
+We have <%= pluralize(@total_orders, "order") %>
+
+<img alt="admin" src="/assets/d5.png" align=right height=300 />
+
+
